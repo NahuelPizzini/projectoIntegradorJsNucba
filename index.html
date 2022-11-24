@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CELUSTORE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/375e794729.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <header>
+       <img class="logo" src="./assets/icon-page.png" alt="" />
+
+        <nav class="navbar">
+         
+          <div class="menu-label">
+            <img src="./assets/Hamburger_icon.svg.png" alt="" class="menu-icon">
+          </div>
+
+          
+            <ul class="navbar-list">
+              <li><a class="navbar-link" href="#">Home</a></li>
+              <li><a class="navbar-link" href="https://proyecto-integrador-login.vercel.app/">Login</a></li>
+              <li><a class="navbar-link" href="#sale">Sale</a></li>
+              <li><a class="navbar-link" href="#abautUs">About Us</a></li>
+              <li><a class="navbar-link" href="#reviews">Reviews</a></li>
+            </ul>
+
+
+            <div class="cart-label">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </div>
+
+              <!-- CARRITO  -->
+          <div class="cart" id="cart">
+            <h2>Tus celulares</h2>
+            <div class="cart-container" id="cart-container">
+    
+            </div>
+            <span class="divider"></span>
+            <div class="cart-total">
+              <p>Total:</p>
+              <span class="total" id="total">0.00 pesos</span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+          </div>
+         
+        </nav>
+        
+      
+
+    </header> 
+    <!-- FIN DE HEADER  -->
+
+    <div class="containerTotal">
+        <!-- COMIENZO DEL HERO  -->
+      <section class="hero">
+        <div class="containerHero">
+             <h1>CELUSTORE</h1>
+             <P>Los mejores celulares, al precio que necesitas</P>
+             <button class="btn-hero">TIENDA</button>
+        </div>
+      </section>
+        <!-- FIN DEL HERO  -->
+  
+
+      <!-- COMIENZO SECTION ABAOUT US -->
+      <section class="abautUs">
+        <div class="divFantasma" id="abautUs"></div>
+        <div class="quienesSomos">
+          <h2>¿POR QUE COMPRAR EN NUESTRA TIENDA?</h2>
+          <p>Somos una empresa que esta comprometida en ofrecerte nuestros servicios de viajes de la mas alta calidad, combinando nuestra energía y entusiasmo, con años de experiencia. Nuestra mayor satisfacción viene de ayudar a un gran numero de clientes a sentirse libres, recorriendo lugares maravillosos.
+          </p>
+        </div>
+  
+        <div class="containerCaractEmpresa">
+          <div class="item">
+            <img src="img/medallaIcon.png" alt="" />
+            <h3>6 MESES DE GARANTIA</h3>
+            <p>
+              ¿No estás conforme con la calidad del producto? No te preocupes, te reponemos el producto o te devolvemos el dinero.
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/shipping-icon.png" alt="" />
+            <h3>ENVIO GATIS A TODO EL PAÍS</h3>
+            <p>
+              Brindamos seguimiento de tus compra, por lo que podés tener la certeza de que va a llegar a la dirección elegida.
+            </p>
+          </div>
+          <div class="item">
+            <img src="img/tarjetasIcon.png" alt="" />
+            <h3>MÉTODOS DE PAGO</h3>
+            <p>
+              Disponemos de una amplia financiación y te asesoramos sobre las
+              mejores promociones del mercado para que puedas realizar tus pagos
+              de la mejor manera.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- FIN SECTION ABOUT US -->
+
+      <!-- COMIENZO SECTION PRODUCTS -->
+      <section class="products">
+        <h2>¡MIRA TODOS NUESTROS PRODUCTOS!</h2>
+        <div class="categories" >
+          <button class="category active">Todas</button>
+          <button class="category"  data-category="Iphone" >Apple</button>
+          <button class="category"  data-category="Motorola">Motorola</button>
+          <button class="category"  data-category="Xiaomi">Xiaomi</button>
+          <button class="category"  data-category="TCL">TCL</button>
+          <button class="category"  data-category="Samsung">Samsumg</button>
+        </div>
+          <div class="containerCardsProducts" id="containerCardsProducts">
+         
+             
+            
+          </div>
+      
+          
+          <button class="btnViewMore">VER MÁS</button>
+      </section>
+      <!-- FIN SECTION PRODUCTS -->
+
+      <!-- COMIENZO RESEÑAS -->
+      <section class="marcas">
+        <div class="divFantasma" id="reviews"></div>
+          <h2>Trabajamos con las mejores marcas para darte garantia de confianza </h2>
+          <div class="containerCards">
+            <img class="brand" src="img/apple-logo.png">
+            <img class="brand" src="img/xiaomi-logo.png">
+            <img class="brand" src="img/motorola-logo.png">
+            <img class="brand" src="img/samsung-logo.png">
+            <img class="brand" src="img/tcl-logo.png">
+          </div>
+      </section>
+        
+    </div>
+    
+    <footer>
+        <img src="Img/youtubeIcon.png" alt="" class="iconFooter">
+        <img src="Img/instagramIcon.png" alt="" class="iconFooter">
+        <img src="Img/facebookIcon.png" alt="" class="iconFooter">
+        <img src="Img/twitterIcon.png" alt="" class="iconFooter">
+        <img src="Img/whatsappIcon.png" alt="" class="whatsappIcon">
+    </footer>
+    <div class="add-modal"></div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>
+
